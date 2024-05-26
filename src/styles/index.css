@@ -1,0 +1,161 @@
+@import '../_css/reboot.css';
+
+#videoBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.link {
+  color: currentColor;
+  text-underline-offset: 0.4ex;
+  text-decoration: underline;
+
+  &.pres {
+    font-weight: 600;
+  }
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-decs__container {
+  flex: 1 1 455px;
+}
+
+.header-desc {
+  max-width: 455px;
+  line-height: 1.4;
+}
+
+.header-list {
+  flex: 1 1 460px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.header-list__item {
+  &.right {
+    width: 297px;
+  }
+
+  & h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  & li {
+    line-height: 1.4;
+  }
+}
+
+#orderForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 964px;
+  margin: 184px auto 272px;
+
+  & .link {
+    font-size: 14px;
+  }
+}
+
+.form-close {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+.form-container {
+  background: var(--c-black);
+  padding: 32px;
+  width: 100%;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 40px;
+
+  & > span {
+    line-height: 1.4;
+  }
+}
+
+.form-input {
+  width: 100%;
+  height: 53px;
+  background: none;
+  border: none;
+  border-bottom: 1px dashed var(--c-white);
+  font-size: 40px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  padding: 4px;
+  color: var(--c-white);
+}
+
+.form-desc {
+  max-width: 400px;
+  font-size: 12px;
+  letter-spacing: 0.12px;
+  margin-bottom: 10px;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.form-submit {
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  background: none;
+  border: none;
+  color: currentColor;
+  text-decoration: underline;
+}
+
+#footer {
+  position: relative;
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  & > div {
+    flex: 1;
+    display: flex;
+    gap: 65px;
+  }
+
+  & > span {
+    flex: 1;
+  }
+}
+
+.footer-addr {
+  display: flex;
+  gap: 10px;
+}

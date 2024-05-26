@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('/fonts/SF-Pro-Display-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SFProDisplay';
+  src: url('/fonts/SF-Pro-Display-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --c-white: white;
+  --c-black: black;
+  --c-grey: #2e2e2e;
+
+  --c-text-dark: var(--c-black);
+  --c-text-light: var(--c-white);
+  --c-text: var(--c-text-light);
+
+  --c-bg: var(--c-grey);
+
+  --edges: 20px;
+  --edges-middle: 10vw;
+
+  --w-container: 1920px;
+  --w-container-s: 1500px;
+
+  --w-wrapper: min(var(--w-container), 100vw - (var(--edges) * 2));
+  --w-wrapper-s: min(
+    var(--w-container-s),
+    100vw - max(calc(var(--edges) * 2), var(--edges-middle))
+  );
+
+  color: var(--c-text);
+  background-color: var(--c-bg);
+
+  font-family: 'SFProDisplay';
+  text-rendering: optimizeSpeed;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100svh;
+  font-size: 100%;
+  max-width: var(--w-container);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+ul[role],
+ol[role] {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}

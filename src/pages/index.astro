@@ -1,0 +1,94 @@
+---
+import '../styles/index.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      rel="icon"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="desc" />
+    <meta name="keywords" content="kw" />
+    <title>Polar studio</title>
+  </head>
+  <body>
+    <video playsinline autoplay muted loop id="videoBg">
+      <source src="/video-web.webm" type="video/webm" />
+    </video>
+    <header id="header">
+      <div class="header-decs__container">
+        <p class="header-desc">
+          We are an independent association of like-minded people who share a
+          common goal and creativity, creating unique visual and creative things
+          for people.
+        </p>
+      </div>
+      <div class="header-list">
+        <div class="header-list__item">
+          <h2>Service:</h2>
+          <ul role="menu">
+            <li>Digital design</li>
+            <li>Graphic Identity</li>
+            <li>Creative</li>
+          </ul>
+        </div>
+        <div class="header-list__item right">
+          <h2>Contacts:</h2>
+          <ul role="menu">
+            <li>
+              <a href="mailto:hello@thepolar.studio">hello@thepolar.studio</a>
+            </li>
+            <li><a href="https://instagram.com/">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <a href="#" class="link pres">Inquire for a presentation</a>
+    <main id="main">
+      <form id="orderForm">
+        <button type="button" class="form-close">Close</button>
+        <div class="form-container">
+          <label class="form-label">
+            <span>A few words about you </span>
+            <input
+              type="text"
+              name="about"
+              class="form-input"
+              placeholder="We're cool architects team"
+            />
+          </label>
+          <label class="form-label">
+            <span>Email</span>
+            <input
+              type="email"
+              name="mail"
+              class="form-input"
+              placeholder="info@bussines.com"
+            />
+          </label>
+          <p class="form-desc">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't
+          </p>
+          <footer class="form-footer">
+            <a href="#" class="link">Privacy policy</a>
+            <button type="submit" class="form-submit">Send</button>
+          </footer>
+        </div>
+      </form>
+    </main>
+
+    <footer id="footer">
+      <div>
+        <span>Polar studio ®</span>
+        <span class="footer-addr">Poland, Warsaw <span>17:33:00</span></span>
+      </div>
+      <span>© 2024</span>
+    </footer>
+  </body>
+</html>
